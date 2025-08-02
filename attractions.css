@@ -1,0 +1,447 @@
+/* =============================
+   Global Reset & Typography
+============================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* =============================
+   Header Section
+============================= */
+.header {
+  background-color: #2c3e50;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.logo-container h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.home-button .button {
+  display: inline-block;
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: #f4a261;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.home-button .button:hover {
+  background-color: #e76f51;
+  transform: scale(1.05);
+}
+
+/* =============================
+   Subheading
+============================= */
+.subhead {
+  text-align: center;
+  color: teal;
+  margin: 40px 0 20px;
+  font-size: 2rem;
+}
+
+/* =============================
+   Attractions Grid List
+============================= */
+.attractions-list {
+  max-width: 1000px;
+  margin: 0 auto 60px;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.attractions-list:hover {
+  transform: scale(1.01);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.attractions-list ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.attractions-list li {
+  text-align: center;
+}
+
+.attractions-list a {
+  display: block;
+  padding: 12px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+  background-color: #f4f4f9;
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s;
+  position: relative;
+}
+
+.attractions-list a::before {
+  content: '👉';
+  position: absolute;
+  left: 10px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.attractions-list a:hover {
+  background-color: #f4a261;
+  color: white;
+  transform: translateY(-3px);
+}
+
+.attractions-list a:hover::before {
+  opacity: 1;
+}
+
+/* =============================
+   Footer Section
+============================= */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 40px 20px 20px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.footer-contact,
+.footer-social {
+  width: 250px;
+}
+
+.footer-contact h3,
+.footer-social h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.footer-contact ul,
+.footer-social ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-contact li,
+.footer-social li {
+  margin: 8px 0;
+}
+
+.footer-contact li strong,
+.footer-social li a {
+  color: #f4a261;
+}
+
+.footer-social li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.05rem;
+  transition: color 0.3s ease;
+}
+
+.footer-social li a:hover {
+  color: #f4a261;
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  font-size: 0.9rem;
+}
+
+/* =============================
+   Responsive Design
+============================= */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-contact,
+  .footer-social {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .home-button {
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+  }
+}/* =============================
+   Global Reset & Typography
+============================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* =============================
+   Header Section
+============================= */
+.header {
+  background-color: #2c3e50;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.logo-container h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.home-button .button {
+  display: inline-block;
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: #f4a261;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.home-button .button:hover {
+  background-color: #e76f51;
+  transform: scale(1.05);
+}
+
+/* =============================
+   Subheading
+============================= */
+.subhead {
+  text-align: center;
+  color: teal;
+  margin: 40px 0 20px;
+  font-size: 2rem;
+}
+
+/* =============================
+   Attractions Grid List
+============================= */
+.attractions-list {
+  max-width: 1000px;
+  margin: 0 auto 60px;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.attractions-list:hover {
+  transform: scale(1.01);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.attractions-list ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.attractions-list li {
+  text-align: center;
+}
+
+.attractions-list a {
+  display: block;
+  padding: 12px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+  background-color: #f4f4f9;
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s;
+  position: relative;
+}
+
+.attractions-list a::before {
+  content: '👉';
+  position: absolute;
+  left: 10px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.attractions-list a:hover {
+  background-color: #f4a261;
+  color: white;
+  transform: translateY(-3px);
+}
+
+.attractions-list a:hover::before {
+  opacity: 1;
+}
+
+/* =============================
+   Footer Section
+============================= */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 40px 20px 20px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.footer-contact,
+.footer-social {
+  width: 250px;
+}
+
+.footer-contact h3,
+.footer-social h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.footer-contact ul,
+.footer-social ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-contact li,
+.footer-social li {
+  margin: 8px 0;
+}
+
+.footer-contact li strong,
+.footer-social li a {
+  color: #f4a261;
+}
+
+.footer-social li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.05rem;
+  transition: color 0.3s ease;
+}
+
+.footer-social li a:hover {
+  color: #f4a261;
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  font-size: 0.9rem;
+}
+
+/* =============================
+   Responsive Design
+============================= */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-contact,
+  .footer-social {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+
+  .home-button {
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+  }
+}
